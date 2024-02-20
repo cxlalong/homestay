@@ -29,4 +29,10 @@ public interface EmployeeService {
      * @return
      */
     PageResult querry(EmployeePageQueryDTO employeePageQueryDTO);
+
+    void changeStatus(int status, long id);
+
+    Employee getById(long id);
+
+    void update(EmployeeDTO employeeDTO);
 }
