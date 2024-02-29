@@ -46,4 +46,10 @@ public interface OrderMapper {
 
     @Select("select * from orders where status = #{status} and order_time < #{orderTime}")
     List<Orders> getByStatusAndTime(Integer status, LocalDateTime orderTime);
+
+    Double sumByMap(Map map);
+
+    Integer countByMap(Map map);
+
+    List<GoodsSalesDTO> getSalesTop(LocalDateTime begin, LocalDateTime end);
 }
