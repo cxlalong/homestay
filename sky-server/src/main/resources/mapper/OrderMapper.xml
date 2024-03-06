@@ -95,7 +95,7 @@
             and o.order_time &lt; #{end}
         </if>
         group by od.name
-        order by number
+        order by number desc
         limit 0,10
     </select>
 
